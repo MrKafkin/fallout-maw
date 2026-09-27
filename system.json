@@ -1,0 +1,192 @@
+{
+  "id": "fallout-maw",
+  "type": "system",
+  "title": "Fallout-MaW",
+  "description": "A universal automation-focused tabletop system for Foundry Virtual Tabletop.",
+  "version": "0.2.3",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.361"
+  },
+  "authors": [
+    {
+      "name": "Fallout-MaW Developers"
+    }
+  ],
+  "esmodules": [
+    "calendar/index.js",
+    "src/main.mjs",
+    "simple-quest/scripts/main.js"
+  ],
+  "styles": [
+    "calendar/styles/calendar.css",
+    "styles/fallout-maw.css",
+    "styles/combat-carousel.css",
+    "simple-quest/styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "calendar/lang/en.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/simple-quest.en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "calendar/lang/ru.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/simple-quest.ru.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "construct": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    },
+    "Item": {
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ability": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "trauma": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "disease": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    },
+    "RegionBehavior": {
+      "fallout-maw.periodicDamage": {}
+    }
+  },
+  "packs": [
+    {
+      "name": "fallout-mav-items",
+      "label": "FALLOUTMAW.Compendiums.Items",
+      "system": "fallout-maw",
+      "path": "packs/fallout-mav-items",
+      "type": "Item"
+    },
+    {
+      "name": "fallout-mav-actors",
+      "label": "FALLOUTMAW.Compendiums.Actors",
+      "system": "fallout-maw",
+      "path": "packs/fallout-mav-actors",
+      "type": "Actor"
+    },
+    {
+      "name": "fallout-mav-scenes",
+      "label": "FALLOUTMAW.Compendiums.Scenes",
+      "path": "packs/fallout-mav-scenes",
+      "type": "Scene"
+    },
+    {
+      "name": "fallout-mav-journals",
+      "label": "FALLOUTMAW.Compendiums.Journals",
+      "system": "fallout-maw",
+      "path": "packs/fallout-mav-journals",
+      "type": "JournalEntry"
+    },
+    {
+      "name": "fallout-maw-items-eng",
+      "label": "Items",
+      "system": "fallout-maw",
+      "path": "packs/fallout-maw-items-eng",
+      "type": "Item"
+    },
+    {
+      "name": "fallout-maw-actors-eng",
+      "label": "Actors",
+      "system": "fallout-maw",
+      "path": "packs/fallout-maw-actors-eng",
+      "type": "Actor"
+    },
+    {
+      "name": "fallout-maw-scenes-eng",
+      "label": "Scenes",
+      "system": "fallout-maw",
+      "path": "packs/fallout-maw-scenes-eng",
+      "type": "Scene"
+    },
+    {
+      "name": "fallout-maw-journals-eng",
+      "label": "Journals",
+      "system": "fallout-maw",
+      "path": "packs/fallout-maw-journals-eng",
+      "type": "JournalEntry"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Fallout-MaW (Русский)",
+      "sorting": "m",
+      "color": "#4f8f5b",
+      "packs": [
+        "fallout-mav-items",
+        "fallout-mav-actors",
+        "fallout-mav-scenes",
+        "fallout-mav-journals"
+      ]
+    },
+    {
+      "name": "Fallout-MaW (English)",
+      "sorting": "m",
+      "color": "#518bbf",
+      "packs": [
+        "fallout-maw-items-eng",
+        "fallout-maw-actors-eng",
+        "fallout-maw-scenes-eng",
+        "fallout-maw-journals-eng"
+      ]
+    }
+  ],
+  "socket": true,
+  "persistentStorage": true,
+  "initiative": "1d20 + @attributes.initiative",
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.dodge",
+  "media": [],
+  "url": "https://github.com/MrKafkin/fallout-maw",
+  "manifest": "https://github.com/MrKafkin/fallout-maw/releases/latest/download/system.json",
+  "download": "https://github.com/MrKafkin/fallout-maw/releases/download/v0.2.3/fallout-maw-0.2.3-full.zip"
+}
