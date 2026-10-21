@@ -96,7 +96,8 @@
       }
     },
     "RegionBehavior": {
-      "fallout-maw.periodicDamage": {}
+      "fallout-maw.periodicDamage": {},
+      "fallout-maw.player": {}
     }
   },
   "packs": [
