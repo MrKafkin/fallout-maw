@@ -3,7 +3,7 @@
   "type": "system",
   "title": "Fallout-MaW",
   "description": "A universal automation-focused tabletop system for Foundry Virtual Tabletop.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "compatibility": {
     "minimum": "14",
     "verified": "14.361"
@@ -78,6 +78,7 @@
       }
     },
     "Item": {
+      "sceneAttack": {},
       "gear": {
         "htmlFields": [
           "description"
@@ -198,5 +199,5 @@
   "media": [],
   "url": "https://github.com/MrKafkin/fallout-maw",
   "manifest": "https://github.com/MrKafkin/fallout-maw/releases/latest/download/system.json",
-  "download": "https://github.com/MrKafkin/fallout-maw/releases/download/v0.3.2/fallout-maw-0.3.2-full.zip"
+  "download": "https://github.com/MrKafkin/fallout-maw/releases/download/v0.3.3/fallout-maw-0.3.3-full.zip"
 }
